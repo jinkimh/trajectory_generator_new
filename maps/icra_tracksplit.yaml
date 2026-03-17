@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: icra_tracksplit.png
+negate: 0
+occupied_thresh: 0.45
+origin:
+- -50.0
+- -2.3
+- 0.0
+resolution: 0.05

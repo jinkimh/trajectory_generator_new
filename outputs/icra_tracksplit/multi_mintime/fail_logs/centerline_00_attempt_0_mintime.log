@@ -1,0 +1,58 @@
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+This is Ipopt version 3.14.11, running with linear solver MUMPS 5.4.1.
+
+Number of nonzeros in equality constraint Jacobian...:   218125
+Number of nonzeros in inequality constraint Jacobian.:    54218
+Number of nonzeros in Lagrangian Hessian.............:   175657
+
+Total number of variables............................:    28301
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:     9437
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:    24764
+Total number of inequality constraints...............:    11786
+        inequality constraints with only lower bounds:     1178
+   inequality constraints with lower and upper bounds:     7073
+        inequality constraints with only upper bounds:     2357
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  1.1790000e+01 1.39e+00 9.13e-01  -1.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  1.1757839e+01 1.38e+00 3.05e+03  -1.0 2.41e+00   4.0 4.97e-02 8.69e-03h  1
+   2  1.1773864e+01 1.36e+00 2.40e+03  -1.0 2.41e+00   3.5 1.38e-03 9.70e-03f  1
+   3  1.1787743e+01 1.36e+00 2.18e+03  -1.0 2.44e+00   3.0 7.58e-04 3.56e-03f  1
+   4  1.1795479e+01 1.36e+00 2.16e+03  -1.0 3.43e+00   2.6 4.03e-04 5.90e-04f  1
+   5  1.1808600e+01 1.36e+00 2.09e+03  -1.0 2.39e+00   3.0 3.33e-04 1.25e-03f  1
+   6  1.1819170e+01 1.35e+00 2.01e+03  -1.0 2.23e+00   3.4 5.00e-04 1.51e-03f  1
+   7  1.1833237e+01 1.35e+00 1.96e+03  -1.0 3.17e+00   2.9 2.02e-04 9.99e-04f  1
+   8  1.1840745e+01 1.35e+00 1.90e+03  -1.0 2.19e+00   3.4 1.62e-04 8.99e-04f  1
+   9  1.1855018e+01 1.35e+00 1.85e+03  -1.0 4.13e+00   2.9 1.24e-04 7.76e-04f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  1.1877374e+01 1.35e+00 2.19e+03  -1.0 2.16e+00   3.3 5.65e-04 2.05e-03f  1
+  11  1.1890775e+01 1.35e+00 2.24e+03  -1.0 1.20e+01   2.8 1.56e-04 4.44e-04f  1
+  12  1.1918895e+01 1.34e+00 2.37e+03  -1.0 2.12e+00   3.3 1.49e-03 2.04e-03f  1
+  13  1.1938687e+01 1.34e+00 2.98e+03  -1.0 2.05e+00   3.7 1.25e-03 2.43e-03f  1
+  14  1.1952618e+01 1.34e+00 3.02e+03  -1.0 2.05e+00   3.2 5.84e-04 7.31e-04f  1
+  15  1.1976688e+01 1.34e+00 3.71e+03  -1.0 2.06e+00   3.6 9.23e-04 2.37e-03f  1
+  16  1.1978712e+01 1.34e+00 3.72e+03  -1.0 9.75e+01   3.2 1.64e-05 7.86e-05f  1
+  17  1.1996191e+01 1.34e+00 3.98e+03  -1.0 2.06e+00   3.6 8.70e-04 1.44e-03f  1
+  18  1.2004582e+01 1.33e+00 4.01e+03  -1.0 6.66e+00   3.1 2.10e-04 2.96e-04f  1
+  19  1.2030041e+01 1.33e+00 4.53e+03  -1.0 2.05e+00   3.5 6.69e-04 1.83e-03f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  1.2035097e+01 1.33e+00 4.53e+03  -1.0 1.00e+01   3.1 1.33e-04 1.45e-04f  1
+  21  1.2061866e+01 1.33e+00 5.02e+03  -1.0 2.04e+00   3.5 5.79e-04 1.68e-03f  1
+  22  1.2063943e+01 1.33e+00 5.02e+03  -1.0 4.13e+01   3.0 4.23e-05 4.42e-05f  1
+  23  1.2088398e+01 1.33e+00 5.39e+03  -1.0 2.03e+00   3.4 5.07e-04 1.36e-03f  1
+  24  1.2105499e+01 1.33e+00 6.13e+03  -1.0 2.10e+00   3.9 6.20e-04 1.48e-03h  1
+  25  1.2107911e+01 1.33e+00 4.63e+03  -1.0 2.14e+00   4.3 1.03e-03 2.56e-04h  1
+  26r 1.2107911e+01 1.33e+00 9.99e+02   0.1 0.00e+00   3.8 0.00e+00 4.61e-07R  5
+  27r 1.6515985e+01 6.42e-01 1.01e+03   0.1 9.70e+02    -  5.71e-03 8.19e-04f  1
+  28  1.6517239e+01 6.42e-01 7.75e+00  -1.0 2.20e+01    -  2.18e-04 3.91e-04f  1
+  29  1.6530144e+01 6.41e-01 2.60e+01  -1.0 1.28e+01    -  6.26e-04 1.07e-03f  1
+Exception of type: IpoptException in file "Unknown File" at line -1:
+ Exception message: Unknown Exception caught in Ipopt

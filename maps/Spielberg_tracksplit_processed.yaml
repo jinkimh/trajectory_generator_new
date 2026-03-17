@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: Spielberg_tracksplit_processed.png
+negate: 0
+occupied_thresh: 0.45
+origin:
+- -84.85359914210505
+- -36.30299725862132
+- 0.0
+resolution: 0.05796

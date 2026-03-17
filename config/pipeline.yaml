@@ -1,0 +1,86 @@
+# Pipeline configuration for map preprocessing -> multi-centerlines -> multi mintime
+
+map_name: "BrandsHatch_map"
+map_ext: ".png"
+
+tracksplit:
+  enabled: true
+  args:
+    edge_method: "canny"
+    canny_low: 30
+    canny_high: 120
+    edge_dilate: 3
+    close_ksize: 5
+    open_ksize: 0
+    min_edge_area: 0
+    suffix: "_tracksplit"
+    save_yaml: true
+
+preprocess:
+  enabled: true
+  args:
+    suffix: "_processed"
+    preset: "bexco_smooth"
+    strict_white: true
+    track_value: 254
+    track_tolerance: 0
+    nontrack_threshold: 60
+    nontrack_dilate: 3
+    track_erode: 0
+    smooth_mode: "blur"
+    smooth_blur: 5
+    blur: 5
+    morph: 3
+    gap: 2
+    post_keep_largest: true
+    post_min_area: 0
+    save_compare: false
+
+frictionmap:
+  enabled: true
+  map: "{map_name}_processed"
+  ext: "{map_ext}"
+  args:
+    out_dir: "inputs/frictionmaps"
+    out_name: "{map_name}"
+    cellwidth: 0.5
+    track_thresh: 250
+    mu: 1.0
+    # low_mu_rect:
+    #   - [0.0, 0.0, 1.0, 1.0, 0.7]
+
+centerlines:
+  enabled: true
+  map: "{map_name}_processed"
+  ext: "{map_ext}"
+  args:
+    headless: true
+    keep_top: 2
+    max_paths: 200
+    max_states: 50000
+    max_edge_len: 10000
+    smooth_window: 1
+    prune_len: 0
+    jump_threshold: 5.0
+    dedup_iou: 0.6
+    no_dedup: false
+    max_cycles: 20
+    min_cycle_len: 0
+
+mintime:
+  enabled: true
+  map: "{map_name}"
+  centerline_map: "{map_name}_processed"
+  args:
+    headless: true
+    plot_debug: false
+    plot_mincurv: true
+    save_solver_log: true
+    ipopt_max_iter: 3000
+    ipopt_print_level: 1
+    ipopt_print_time: false
+    ipopt_tol: 1.0e-6
+    width_scale: 0.85
+    min_track_width: null
+    smooth_window: 7
+    sweep: false

@@ -1,0 +1,10 @@
+free_thresh: 0.25
+image: skir_tracksplit.pgm
+mode: trinary
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -12.1
+- -5.69
+- 0
+resolution: 0.05
